@@ -33,4 +33,4 @@ This page hosts:
 * * *
 
 ### Prerequisites
-* Code List 1 [Union-Find](https://github.com/prakashbh/day-today-codes/blob/master/10-union-find-basic.c) concepts.
+
