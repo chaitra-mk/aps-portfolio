@@ -31,6 +31,8 @@ This page hosts:
 
 
 * * *
+# Domain : RedBus
+RedBus is the largest bus ticket selling platform in the world, sells millions of bus tickets in a month. redBus manages millions of inventory/buses and many bus operators(travels) sell tickets on the redBus platform. redBus operates in six countries (India, Singapore, Malaysia, Indonesia, Peru, and Colombia). There are hundreds of API Providers integrated with redBus.
 
 #  Business Cases
 ## Search Boarding Location and Destination Location
@@ -42,7 +44,7 @@ Challenges : Redbus is a very large platform. In most of India, this app is util
 A Trie is a tree-based data structure designed for storing dynamic strings, offering efficient insertion and deletion methods. It supports fast searches, making it ideal for applications like Redbus, which operates across India and manages many locations. Efficient data storage and retrieval are crucial for such platforms. Tries are particularly useful for storing source and destination places, as well as for implementing auto-completion functionality.
 
 Each node in a Trie node structure has character data, child nodes (for characters that come after it), and a flag to indicate the end of a word. Insertion is the process of adding each city name  to the Trie by iterating through the Trie based on each character in the word, adding new nodes as necessary, and marking the word's end when adding the last character. In order to provide autocomplete capability, the subtree rooted at the prefix node is traversed in the Trie depending on the input prefix, collecting all words (city names) that match the prefix.
-![image](https://github.com/chaitra-mk/aps-portfolio/assets/105005252/cc8ce47c-1bc0-41e8-99c2-34d3b4392829)
+<img src="https://github.com/chaitra-mk/aps-portfolio/assets/105005252/cc8ce47c-1bc0-41e8-99c2-34d3b4392829" alt="image" width="400" height="300">
 
 To manage multiple boarding or destination locations within cities, hash maps can be used. By implementing a hash map where city names act as keys and hold lists containing the locations as their values, this structure enables rapid access to boarding or destination locations associated with each city. Such an approach optimizes the retrieval and organization of location data, enhancing the application's efficiency and user experience.
 
