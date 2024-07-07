@@ -122,6 +122,6 @@ Real time tracking: In this system we consume data from the above two systems an
 - Contextual notifications to passengers through SMS, push notification and automated calls
 - Booking window extension for delayed services
 - Feed for real time settlement of delay insurances
-[reference](https://medium.com/redbus-in/redbus-bus-tracking-system-6134aa6b9160)![image]
+[reference](https://medium.com/redbus-in/redbus-bus-tracking-system-6134aa6b9160)
 
 
