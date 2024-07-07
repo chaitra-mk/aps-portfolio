@@ -89,6 +89,8 @@ Merge sort is a sorting algorithm that follows the divide-and-conquer approach. 
 
 For instance, when a user searches for buses, the initial set may or may not be sorted. By applying Merge Sort, the application can sort these results in a way that optimizes for the user's needs. For example, buses can first be sorted by fare to identify the cheapest options, then by travel time to find the fastest routes, and finally by relevance, which could be determined by factors like the number of stops or departure times that match the user's preferences.
 
+Max-heap and Min-heap can also be used. The buses can be stored in max-heap where they can be  sorted based on reviews.
+
 ## Ranked Search Results
 To implement ranked search results in an application like RedBus, a combination of Merge Sort and a Weighted Ranking Algorithm can be highly effective. This approach ensures that search results are not only sorted efficiently but also prioritized according to user preferences and historical data. 
 
@@ -128,6 +130,19 @@ Real time tracking: In this system we consume data from the above two systems an
 [reference](https://medium.com/redbus-in/redbus-bus-tracking-system-6134aa6b9160)
 
 ## Bus Fleet Management
-Applying the knapsack problem to fleet management in RedBus and similar services allows for strategic decision-making that optimizes resource utilization, reduces operational costs, and enhances service efficiency. This approach not only improves financial outcomes but also contributes to a more reliable and customer-centric transportation service.The knapsack problem, known for its ability to optimize resource allocation under constraints, can be applied effectively to manage bus fleets with diverse capacities and operational costs.
+RedBus fleet management can maximise resource utilisation, cut costs, and improve service efficiency by implementing the knapsack problem. Effective management of bus fleets with varying capacities and operating costs can be achieved through the application of the knapsack problem, which is recognised for its capacity to optimise resource allocation under limitations.Bus fleets typically consist of buses with varying capacities, operational costs, and specific capabilities suited for different routes or times of the day.
+
+Challenge :  The challenge lies in determining the optimal mix of bus types (e.g., small, medium, large) to assign to different routes and schedules. 
+
+This optimization aims to maximize profitability by minimizing operational costs while meeting passenger demand and service quality standards.
+
+## Managing Customer Data
+### Hash Tables
+A hash table may be used to store a customer's session data for easy access and updates once they log in. This is very helpful for saving preferences, session data, and other temporary information. Using unique identifiers like user IDs or email addresses, hash tables can be utilised to quickly retrieve customer information.
+
+### B and B+ Trees
+B trees can be used to store and arrange customer data, including booking histories, preferences, and transaction records, after a user logs in. B-trees are effective for storing and retrieving data based on identifiers like customer IDs or booking numbers because each node can have numerous keys and pointers. This structure is appropriate for real-time applications where data access speed is critical since it guarantees that all searches, insertions, and deletions have logarithmic time complexity.
+
+Where range queries are common, such as retrieving bookings within a given period range or ranking customers based on transaction amounts, B+ trees can be used to manage customer related data. RedBus can utilize B+ trees to manage and retrieve booking information, with operations such as searching for bookings by date, customer ID, route etc.
 
 
