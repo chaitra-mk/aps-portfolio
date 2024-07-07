@@ -101,11 +101,12 @@ The Weighted Ranking Algorithm calculates a composite score for each bus option 
 Everyday about 150 K customers travel with a ticket bought on redBus in about 40 K bus trips. We collect real time GPS data from the buses and provide value added services to our customers along with basic tracking of the bus.
 
 For keeping track of the buses data structure called a quadtree can be used. Imagine a map divided into squares, starting with the entire area RedBus covers. The quadtree keeps track of these squares. If a square has too many buses (say, more than 100), it gets divided into four smaller squares. This keeps happening until each square has a manageable number of buses. This way, RedBus can quickly find buses in any area.
-(https://github.com/chaitra-mk/aps-portfolio/assets/105005252/9af53b8a-0a5e-4688-a968-44d5d9ed5951)
+![Image Description](/assets/9af53b8a-0a5e-4688-a968-44d5d9ed5951)
 
 Buses with GPS tell the RedBus server where they are all the time. The server updates its map (the quadtree) with these new locations. The map figures out which square (leaf node) each bus belongs to based on its GPS signal. This keeps the map up-to-date with where all the buses are.
 
 The quadtree structure allows for efficient updates and queries, handling frequent GPS updates from buses and real-time queries from users seamlessly. The dynamic partitioning of the quadtree ensures that densely populated areas, where bus activity is high, are represented with smaller, more granular regions. In contrast, sparsely populated areas have larger regions. This adaptability ensures efficient management of bus data across different densities, maintaining performance and accuracy.
+
 [reference](https://medium.com/@joudwawad/school-bus-tracker-system-architecture-6dd3307e3860)
 
 ##### The real RedBus Application uses following process:
@@ -115,6 +116,7 @@ Data processing: In these process we run algorithms on historical data and produ
 - Graph for the bus paths
 - ETA model
 - GTFS (Google transit feed specification)
+
 There are multiple reports for tracking accuracy of the ETA, coverage of Boarding point detection and customer experience during the journey.
 Real time tracking: In this system we consume data from the above two systems and merge it with the real time GPS feed coming from the GPS vendor integrations. The result is a set of value added services like;
 - Live bus location tracking on mobile web and app
@@ -122,6 +124,7 @@ Real time tracking: In this system we consume data from the above two systems an
 - Contextual notifications to passengers through SMS, push notification and automated calls
 - Booking window extension for delayed services
 - Feed for real time settlement of delay insurances
+- 
 [reference](https://medium.com/redbus-in/redbus-bus-tracking-system-6134aa6b9160)
 
 
