@@ -97,6 +97,9 @@ Challenge : During peak time thousands of requests to book ticket may be receive
 
 Organizing and processing booking requests in an orderly and efficient manner by using queues and concurrency control algorithms. By using queues, the system can handle multiple booking requests in real-time, ensuring that each request is processed fairly and in the order it was received. This is particularly important during peak times when the system might receive thousands of simultaneous requests. The requests can be handled based on first come first serve (FIFO) queues or based on Priority queues.
 
+![image](https://github.com/chaitra-mk/aps-portfolio/assets/105005252/2ee8987a-5b9a-4a59-9f06-5fe4368e6bea)
+
+
 Time Complexity of queue data structure : Insertion and Deletion takes O(1) time and searching takes O(n) time.
 
 Concurrency control uses techniques including locking, optimistic and pessimistic concurrency control, and database transactions to preserve data integrity during concurrent bookings. In order to maintain system stability and user satisfaction, this avoids disputes and guarantees that every booking transaction is performed precisely and thoroughly, either completing completely or not at all.
