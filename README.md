@@ -103,7 +103,8 @@ The Weighted Ranking Algorithm calculates a composite score for each bus option 
 Everyday about 150 K customers travel with a ticket bought on redBus in about 40 K bus trips. We collect real time GPS data from the buses and provide value added services to our customers along with basic tracking of the bus.
 
 For keeping track of the buses data structure called a quadtree can be used. Imagine a map divided into squares, starting with the entire area RedBus covers. The quadtree keeps track of these squares. If a square has too many buses (say, more than 100), it gets divided into four smaller squares. This keeps happening until each square has a manageable number of buses. This way, RedBus can quickly find buses in any area.
-![Image Description](/assets/9af53b8a-0a5e-4688-a968-44d5d9ed5951)
+![Screenshot 2024-07-07 195853](https://github.com/chaitra-mk/aps-portfolio/assets/105005252/ac1566f3-2cf6-4605-b7cf-ec8e1b10ced1)
+
 
 Buses with GPS tell the RedBus server where they are all the time. The server updates its map (the quadtree) with these new locations. The map figures out which square (leaf node) each bus belongs to based on its GPS signal. This keeps the map up-to-date with where all the buses are.
 
