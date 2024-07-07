@@ -157,7 +157,8 @@ Real time tracking: In this system we consume data from the above two systems an
 ## Bus Fleet Management
 RedBus fleet management can maximise resource utilisation, cut costs, and improve service efficiency by implementing the knapsack problem. Effective management of bus fleets with varying capacities and operating costs can be achieved through the application of the knapsack problem, which is recognised for its capacity to optimise resource allocation under limitations.Bus fleets typically consist of buses with varying capacities, operational costs, and specific capabilities suited for different routes or times of the day.
 
-![image](https://github.com/chaitra-mk/aps-portfolio/assets/105005252/310afa6d-8dba-4243-b0d4-3462ecf0f00e)
+![Knapsack_problem_dynamic_programming](https://github.com/chaitra-mk/aps-portfolio/assets/105005252/8d996c53-3890-4965-94f3-20dffb05c120)
+
 
 
 Challenge :  The challenge lies in determining the optimal mix of bus types (e.g., small, medium, large) to assign to different routes and schedules. 
