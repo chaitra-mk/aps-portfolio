@@ -62,6 +62,7 @@ Time Complexity of A* Algorithm depends on heuristics. For priority queue O(|E|l
 ## Anlysing Booking Trends
 Analysing Booking Trends over time is important for optimizing operations and to devise marketing stratergies. RedBus invloves many buses. It includes anlysing increase in bookings during holidays,weekends etc and decrease in bookings during mid week. This requires extensive data and analysis.
 
+![image](https://github.com/chaitra-mk/aps-portfolio/assets/105005252/45a70709-77d7-49a9-9dc7-7843f0803f6f)
 Fenwick Trees can store and efficiently query the number of bookings over different periods.Represent each day or time slot as an entry in the Fenwick Tree. Each index can hold the cumulative number of bookings.When a booking is made, update the tree to increment the booking count for the specific day.The total number of bookings over any range of days can be queried. This can help identify peak booking periods and trends.
 
 Time Complexity : nlogn
