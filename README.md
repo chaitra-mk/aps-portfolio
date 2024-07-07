@@ -45,6 +45,9 @@ Each node in a Trie node structure has character data, child nodes (for characte
 
 To manage multiple boarding or destination locations within cities, hash maps can be used. By implementing a hash map where city names act as keys and hold lists containing the locations as their values, this structure enables rapid access to boarding or destination locations associated with each city. Such an approach optimizes the retrieval and organization of location data, enhancing the application's efficiency and user experience.
 
+Time Complexity : For insertion,deletion.searching is O(n) where n is the length of the string
+Auxillary Space : For Insertin, Deletion O(n) and for Searching O(1)  
+
 
 ## Route Optimisation
 RedBus's implementation of A* enables dynamic route optimisation in real-time. Variables like traffic conditions, passenger demand, operational constraints etc., can be considered. By efficiently determining the shortest paths between bus stops, A* helps minimize travel times, reduce fuel consumption, and improve overall service reliability.
@@ -53,16 +56,23 @@ In RedBus, each bus stop can be represented as a node in a graph, where edges be
 The heuristic function h(n) estimates the distance from any given bus stop to the destination. This estimation guides the algorithm towards the most promising paths, reducing unnecessary exploration and improving efficiency.A* combines g(n) and h(n) to determine the priority of nodes in the open list. The total cost function f(n)=g(n)+h(n) ensures that nodes with lower estimated costs to reach the goal are explored first, leading to faster convergence towards the optimal route.A priority queue is used in the A* algorithm to manage nodes based on their total cost function, ensuring that nodes with lower total costs are explored first, which helps in efficiently finding the shortest path from a start node to a goal node in applications such as route optimization for RedBus.
 Once the goal node is reached, reconstruct the optimal path by tracing back from the goal node to the start node using the recorded parent pointers or paths.
 
+Time Complexity of A* Algorithm depends on heuristics. For priority queue O(|E|log(|V|) where E: Number of Edges and V: Number of Vertices
+
 ## Anlysing Booking Trends
-Analysing Booking Trends over time is important fro optimizing operations and to devise marketing stratergies. RedBus invloves many buses. It includes anlysing increase in bookings during holidays,weekends etc and decrease in bookings during mid week. This requires extensive data and analysis.
+Analysing Booking Trends over time is important for optimizing operations and to devise marketing stratergies. RedBus invloves many buses. It includes anlysing increase in bookings during holidays,weekends etc and decrease in bookings during mid week. This requires extensive data and analysis.
 
 Fenwick Trees can store and efficiently query the number of bookings over different periods.Represent each day or time slot as an entry in the Fenwick Tree. Each index can hold the cumulative number of bookings.When a booking is made, update the tree to increment the booking count for the specific day.The total number of bookings over any range of days can be queried. This can help identify peak booking periods and trends.
+
+Time Complexity : nlogn
 
 
 ## Dynamic Pricing
 Dynamic pricing adjusts ticket prices based on demand to maximize revenue and manage seat utilization.Price can be adjusted dynamically based on the booking trends which can be analysed used Fenwick Trees.
 
 The RedBus in real time implemented a Pricing Algorithm using Machine Learning Algorithms and pattern finding algorithms.The engine combines multiple signals from the market, both on the demand and supply side, to compute pricing suggestions on a real time basis. The price suggestions tries to achieve the goal of improving the operator's average revenue per seat.
+
+
+Time Complexity : nlogn
 
 ## Fraud Detection
 
@@ -75,10 +85,15 @@ As same company bus can be used for many routes on different dates, combination 
 Initialise the Fenwick Tree with total number of seates available. When a booking is made for a bus on particular route and date the corresponding seat count can be descreased and if booking is cancelled the seat count can be increased representing the available seats.  
 This quickly retrives the total number of available seats for a specific route over range of dates. This helps the application to dynamically adjust seat availability.
 
+
+Time Complexity : nlogn
+
 ## Efficient Ticket Booking
 Challenge : During peak time thousands of requests to book ticket may be received. These must be handled to improve customer experience and reduce overbooking.
 
 Organizing and processing booking requests in an orderly and efficient manner by using queues and concurrency control algorithms. By using queues, the system can handle multiple booking requests in real-time, ensuring that each request is processed fairly and in the order it was received. This is particularly important during peak times when the system might receive thousands of simultaneous requests. The requests can be handled based on first come first serve (FIFO) queues or based on Priority queues.
+
+Time Complexity of queue data structure : Insertion and Deletion takes O(1) time and searching takes O(n) time.
 
 Concurrency control uses techniques including locking, optimistic and pessimistic concurrency control, and database transactions to preserve data integrity during concurrent bookings. In order to maintain system stability and user satisfaction, this avoids disputes and guarantees that every booking transaction is performed precisely and thoroughly, either completing completely or not at all.
 
@@ -88,6 +103,8 @@ Merge Sort for Efficient Sorting
 Merge sort is a sorting algorithm that follows the divide-and-conquer approach. It works by recursively dividing the input array into smaller subarrays and sorting those subarrays then merging them back together to obtain the sorted array. In the context of RedBus, Merge Sort can be used to sort bus search results based on various criteria such as relevance, travel time, and fare.
 
 For instance, when a user searches for buses, the initial set may or may not be sorted. By applying Merge Sort, the application can sort these results in a way that optimizes for the user's needs. For example, buses can first be sorted by fare to identify the cheapest options, then by travel time to find the fastest routes, and finally by relevance, which could be determined by factors like the number of stops or departure times that match the user's preferences.
+
+Time Complexity : nlogn
 
 Max-heap and Min-heap can also be used. The buses can be stored in max-heap where they can be  sorted based on reviews.
 
