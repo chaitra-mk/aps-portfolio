@@ -127,4 +127,7 @@ Real time tracking: In this system we consume data from the above two systems an
 - 
 [reference](https://medium.com/redbus-in/redbus-bus-tracking-system-6134aa6b9160)
 
+## Bus Fleet Management
+Applying the knapsack problem to fleet management in RedBus and similar services allows for strategic decision-making that optimizes resource utilization, reduces operational costs, and enhances service efficiency. This approach not only improves financial outcomes but also contributes to a more reliable and customer-centric transportation service.The knapsack problem, known for its ability to optimize resource allocation under constraints, can be applied effectively to manage bus fleets with diverse capacities and operational costs.
+
 
