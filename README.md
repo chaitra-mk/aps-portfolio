@@ -14,10 +14,6 @@
 
 * * *
 
-> A step towards applying dsa to the functionalities of RedBus
->
-> 
-
 
 
 # Introduction
@@ -26,6 +22,15 @@
 </div>
 
 RedBus is a online bus ticket booking platform, connecting various cities across the globe with just a click of a button. With its mobile app downloaded by over 7.5 million loyal customers, redBus has become the largest community of bus travelers in the world. Initially launched in India, Redbus has since expanded its services to Singapore, Malaysia, Indonesia, Colombia, and Peru as of 2014. Boasting the most extensive network of bus operators, routes, and registered users, Redbus plays an important role in connecting cities, enhancing co-living, and positively influencing local economies and public services. Its user-friendly, robust, and scalable reservation and management system is widely used by both passengers and bus operators. This application has played a significant role in public transportation. It provides functionalities such as a route planner, online reservation system accessible to multiple bus companies, and a taxi-sharing service. There are hundreds of API Providers integrated with redBus.
+
+## Objectives
+## Objectives
+
+- Apply data structures and algorithms to the real-world operations of RedBus.
+- Identify business cases and propose various algorithms to implement these cases.
+- Highlight challenges and market benefits for each case, where possible.
+- Provide sample code for the algorithms identified for different cases.
+- 
 #  Business Cases
 ## Search Boarding Location and Destination Location
 
@@ -63,6 +68,7 @@ The heuristic function h(n) estimates the distance from any given bus stop to th
 Once the goal node is reached, reconstruct the optimal path by tracing back from the goal node to the start node using the recorded parent pointers or paths.
 
 [Code for Dijkstra's Algorithm](https://github.com/Nerdylicious/DijkstraShortestPath/blob/master/DijkstraShortestPath.cpp)
+
 Time Complexity of A* Algorithm depends on heuristics. For priority queue O((|E + V|)log(|V|) where E: Number of Edges and V: Number of Vertices
 
 ## Analysing Booking Trends
@@ -72,6 +78,7 @@ Market Benefits : Identifying peak booking periods helps optimize bus schedules 
 Analysing Booking Trends over time is important for optimizing operations and to devise marketing stratergies. RedBus invloves many buses. It includes anlysing increase in bookings during holidays,weekends etc and decrease in bookings during mid week. This requires extensive data and analysis.
 
 <img src="https://github.com/chaitra-mk/aps-portfolio/assets/105005252/45a70709-77d7-49a9-9dc7-7843f0803f6f" alt="Image" width="550" height="450">
+
 Fenwick Trees can store and efficiently query the number of bookings over different periods.Represent each day or time slot as an entry in the Fenwick Tree. Each index can hold the cumulative number of bookings.When a booking is made, update the tree to increment the booking count for the specific day.The total number of bookings over any range of days can be queried. This can help identify peak booking periods and trends.
 
 Time Complexity : nlogn
@@ -217,6 +224,13 @@ Where range queries are common, such as retrieving bookings within a given perio
 [Code for B Tree](https://github.com/chaitra-mk/aps-portfolio/blob/main/B_Tree.cpp)
 
 [Code for B+ Tree](https://github.com/sayef/bplus-tree/blob/master/BPlusTree.cpp)
+
+
+## Conclusion
+
+## Conclusion
+
+Implementing advanced data structures and algorithms within the RedBus platform enhances its efficiency, scalability, and user experience. Utilizing Trie data structures for efficient location search, Dijkstra's and A* algorithms for route optimization, Fenwick Trees for booking trend analysis, and Segment Trees for seat availability management ensures robust and responsive service. Dynamic pricing models, backed by real-time data, maximize revenue while maintaining customer satisfaction. Additionally, graph theory and machine learning for fraud detection, along with quadtree structures for live bus monitoring, significantly improve operational security and passenger experience. By integrating these technologies, RedBus not only optimizes its operations but also sets a high standard in the online bus ticket booking industry, ultimately leading to increased market competitiveness and customer trust.
 
 
 ## References 
