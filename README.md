@@ -14,16 +14,16 @@
 
 * * *
 
-> A step towards applying dsa to the functionalities of instagram
+> A step towards applying dsa to the functionalities of RedBus
 >
 > 
 
 
 
-* * *
-# Domain : RedBus
-RedBus is the largest bus ticket selling platform in the world, sells millions of bus tickets in a month. redBus manages millions of inventory/buses and many bus operators(travels) sell tickets on the redBus platform. redBus operates in six countries (India, Singapore, Malaysia, Indonesia, Peru, and Colombia). There are hundreds of API Providers integrated with redBus.
+# Introduction
+![image](https://github.com/chaitra-mk/aps-portfolio/assets/105005252/525d188a-384d-4cc9-8047-1098eec1744e)
 
+RedBus is a online bus ticket booking platform, connecting various cities across the globe with just a click of a button. With its mobile app downloaded by over 7.5 million loyal customers, redBus has become the largest community of bus travelers in the world. Initially launched in India, Redbus has since expanded its services to Singapore, Malaysia, Indonesia, Colombia, and Peru as of 2014. Boasting the most extensive network of bus operators, routes, and registered users, Redbus plays an important role in connecting cities, enhancing co-living, and positively influencing local economies and public services. Its user-friendly, robust, and scalable reservation and management system is widely used by both passengers and bus operators. This application has played a significant role in public transportation. It provides functionalities such as a route planner, online reservation system accessible to multiple bus companies, and a taxi-sharing service. There are hundreds of API Providers integrated with redBus.
 #  Business Cases
 ## Search Boarding Location and Destination Location
 
