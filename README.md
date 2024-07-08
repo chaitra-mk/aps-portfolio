@@ -1,4 +1,4 @@
-![image](https://github.com/chaitra-mk/aps-portfolio/assets/105005252/9d0ec861-7dd6-4e3b-b68b-882908d52d86)# APS Case Study on RedBus Application
+# APS Case Study on RedBus Application
 
 # RedBus Portfolio
 <dl>
