@@ -53,13 +53,19 @@ Auxillary Space : For Insertin, Deletion O(n) and for Searching O(1)
 
 
 ## Route Optimisation
-RedBus's implementation of A* enables dynamic route optimisation in real-time. Variables like traffic conditions, passenger demand, operational constraints etc., can be considered. By efficiently determining the shortest paths between bus stops, A* helps minimize travel times, reduce fuel consumption, and improve overall service reliability.
+RedBus's implementation of A* enables dynamic route optimisation in real-time. Variables like traffic conditions, passenger demand, operational constraints etc., can be considered.
 
-In RedBus, each bus stop can be represented as a node in a graph, where edges between nodes represent roads or routes connecting these stops. Each edge has an associated weight, typically representing travel time, distance, or other relevant metrics like traffic conditions. The cost function g(n) represent the distance to reach a specific bus stop from the starting point. This cost is updated dynamically as the algorithm explores different paths.
+Market Benefits : Helps minimize travel times, reduce fuel consumption, and improve overall service reliability.
+
+In RedBus, each bus stop can be represented as a node in a graph, where edges between nodes represent roads or routes connecting these stops. Each edge has an associated weight, typically representing travel time, distance, or other relevant metrics like traffic conditions.
+To find the shortest distanace between node Dijkstra's algorithm can be used where the shortest distance from the given node to all other nodes are calculated by constructing spanning tree.
+
+The A* algorithm, on the other hand, offers an efficient alternative.
+In A* algorithm The cost function g(n) represent the distance to reach a specific bus stop from the starting point. This cost is updated dynamically as the algorithm explores different paths.
 The heuristic function h(n) estimates the distance from any given bus stop to the destination. This estimation guides the algorithm towards the most promising paths, reducing unnecessary exploration and improving efficiency.A* combines g(n) and h(n) to determine the priority of nodes in the open list. The total cost function f(n)=g(n)+h(n) ensures that nodes with lower estimated costs to reach the goal are explored first, leading to faster convergence towards the optimal route.A priority queue is used in the A* algorithm to manage nodes based on their total cost function, ensuring that nodes with lower total costs are explored first, which helps in efficiently finding the shortest path from a start node to a goal node in applications such as route optimization for RedBus.
 Once the goal node is reached, reconstruct the optimal path by tracing back from the goal node to the start node using the recorded parent pointers or paths.
 
-Time Complexity of A* Algorithm depends on heuristics. For priority queue O(|E|log(|V|) where E: Number of Edges and V: Number of Vertices
+Time Complexity of A* Algorithm depends on heuristics. For priority queue O(|E + V|log(|V|) where E: Number of Edges and V: Number of Vertices
 
 ## Anlysing Booking Trends
 Analysing Booking Trends over time is important for optimizing operations and to devise marketing stratergies. RedBus invloves many buses. It includes anlysing increase in bookings during holidays,weekends etc and decrease in bookings during mid week. This requires extensive data and analysis.
@@ -69,6 +75,7 @@ Fenwick Trees can store and efficiently query the number of bookings over differ
 
 Time Complexity : nlogn
 
+Here is the simple code of Fenwick Tree
 
 ## Dynamic Pricing
 Dynamic pricing adjusts ticket prices based on demand to maximize revenue and manage seat utilization.Price can be adjusted dynamically based on the booking trends which can be analysed used Fenwick Trees.
