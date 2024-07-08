@@ -29,7 +29,8 @@ RedBus is a online bus ticket booking platform, connecting various cities across
 - Identify business cases and propose various algorithms to implement these cases.
 - Highlight challenges and market benefits for each case, where possible.
 - Provide sample code for the algorithms identified for different cases.
-- 
+
+
 #  Business Cases
 ## Search Boarding Location and Destination Location
 
