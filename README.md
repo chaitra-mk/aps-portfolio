@@ -44,13 +44,16 @@ Challenges : Redbus is a very large platform. In most of India, this app is util
 A Trie is a tree-based data structure designed for storing dynamic strings, offering efficient insertion and deletion methods. It supports fast searches, making it ideal for applications like Redbus, which operates across India and manages many locations. Efficient data storage and retrieval are crucial for such platforms. Tries are particularly useful for storing source and destination places, as well as for implementing auto-completion functionality.
 
 Each node in a Trie node structure has character data, child nodes (for characters that come after it), and a flag to indicate the end of a word. Insertion is the process of adding each city name  to the Trie by iterating through the Trie based on each character in the word, adding new nodes as necessary, and marking the word's end when adding the last character. In order to provide autocomplete capability, the subtree rooted at the prefix node is traversed in the Trie depending on the input prefix, collecting all words (city names) that match the prefix.
-<img src="https://github.com/chaitra-mk/aps-portfolio/assets/105005252/cc8ce47c-1bc0-41e8-99c2-34d3b4392829" alt="image" width="400" height="300">
+<div align="center">
+  <img src="https://github.com/chaitra-mk/aps-portfolio/assets/105005252/cc8ce47c-1bc0-41e8-99c2-34d3b4392829" alt="Image" width="400" height="450">
+</div>
+
 
 To manage multiple boarding or destination locations within cities, hash maps can be used. By implementing a hash map where city names act as keys and hold lists containing the locations as their values, this structure enables rapid access to boarding or destination locations associated with each city. Such an approach optimizes the retrieval and organization of location data, enhancing the application's efficiency and user experience.
 
 Time Complexity : For insertion,deletion.searching is O(n) where n is the length of the string
 Auxillary Space : For Insertin, Deletion O(n) and for Searching O(1)  
-
+[Link for the code](https://github.com/chaitra-mk/aps-portfolio/blob/main/Trie.cpp)
 
 ## Route Optimisation
 RedBus's implementation of A* enables dynamic route optimisation in real-time. Variables like traffic conditions, passenger demand, operational constraints etc., can be considered.
@@ -75,7 +78,7 @@ Fenwick Trees can store and efficiently query the number of bookings over differ
 
 Time Complexity : nlogn
 
-Here is the simple code of Fenwick Tree
+Here is the simple [code](https://github.com/chaitra-mk/aps-portfolio/blob/main/FenwickTree.cpp) of Fenwick Tree
 
 ## Dynamic Pricing
 Dynamic pricing adjusts ticket prices based on demand to maximize revenue and manage seat utilization.Price can be adjusted dynamically based on the booking trends which can be analysed used Fenwick Trees.
@@ -96,8 +99,9 @@ As same company bus can be used for many routes on different dates, combination 
 Initialise the Tree with total number of seates available. When a booking is made for a bus on particular route and date the corresponding seat count can be descreased and if booking is cancelled the seat count can be increased representing the available seats.  
 This quickly retrives the total number of available seats for a specific route over range of dates. This helps the application to dynamically adjust seat availability.
 
-
 Time Complexity : nlogn
+
+[Code for Segment Tree](https://github.com/chaitra-mk/aps-portfolio/blob/main/SegmentTree.cpp)
 
 ## Efficient Ticket Booking
 Challenge : During peak time thousands of requests to book ticket may be received. These must be handled to improve customer experience and reduce overbooking.
@@ -120,6 +124,8 @@ For instance, when a user searches for buses, the initial set may or may not be 
 
 Time Complexity : nlogn
 
+[Code for Merge sort](https://github.com/chaitra-mk/aps-portfolio/blob/main/MergeSort.cpp)
+
 Max-heap and Min-heap can also be used. The buses can be stored in max-heap where they can be  sorted based on reviews.
 
 ## Ranked Search Results
@@ -140,6 +146,8 @@ For keeping track of the buses data structure called a quadtree can be used. Ima
 Buses with GPS tell the RedBus server where they are all the time. The server updates its map (the quadtree) with these new locations. The map figures out which square (leaf node) each bus belongs to based on its GPS signal. This keeps the map up-to-date with where all the buses are.
 
 The quadtree structure allows for efficient updates and queries, handling frequent GPS updates from buses and real-time queries from users seamlessly. The dynamic partitioning of the quadtree ensures that densely populated areas, where bus activity is high, are represented with smaller, more granular regions. In contrast, sparsely populated areas have larger regions. This adaptability ensures efficient management of bus data across different densities, maintaining performance and accuracy.
+
+[Link to the simple implemetation of QuadTree](https://github.com/m-byte918/QuadTree-Cpp)
 
 [reference](https://medium.com/@joudwawad/school-bus-tracker-system-architecture-6dd3307e3860)
 
