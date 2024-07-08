@@ -217,3 +217,9 @@ Where range queries are common, such as retrieving bookings within a given perio
 [Code for B+ Tree](https://github.com/sayef/bplus-tree/blob/master/BPlusTree.cpp)
 
 
+## References 
+[1] RedBus. (n.d.). User-generated reviews classification and tagging from RedBus. Medium. [Online]. Available: https://medium.com/redbus-in/user-generated-reviews-classification-and-tagging-from-redbus-e62b5a5e6951
+
+[2] RedBus. (n.d.). RedBus bus tracking system. Medium. [Online]. Available: https://medium.com/redbus-in/redbus-bus-tracking-system-6134aa6b9160
+
+[3] Joud Wawad. (n.d.). School bus tracker system architecture. Medium. [Online]. Available: https://medium.com/@joudwawad/school-bus-tracker-system-architecture-6dd3307e3860
