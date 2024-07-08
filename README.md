@@ -63,7 +63,7 @@ The heuristic function h(n) estimates the distance from any given bus stop to th
 Once the goal node is reached, reconstruct the optimal path by tracing back from the goal node to the start node using the recorded parent pointers or paths.
 
 [Code for Dijkstra's Algorithm](https://github.com/Nerdylicious/DijkstraShortestPath/blob/master/DijkstraShortestPath.cpp)
-Time Complexity of A* Algorithm depends on heuristics. For priority queue O(|E + V|log(|V|) where E: Number of Edges and V: Number of Vertices
+Time Complexity of A* Algorithm depends on heuristics. For priority queue O((|E + V|)log(|V|) where E: Number of Edges and V: Number of Vertices
 
 ## Analysing Booking Trends
 
@@ -71,7 +71,7 @@ Challenges : Analyzing booking trends requires handling and processing large vol
 Market Benefits : Identifying peak booking periods helps optimize bus schedules and resource allocation. Analysis also helps to boost sales during low-demand periods.
 Analysing Booking Trends over time is important for optimizing operations and to devise marketing stratergies. RedBus invloves many buses. It includes anlysing increase in bookings during holidays,weekends etc and decrease in bookings during mid week. This requires extensive data and analysis.
 
-![image](https://github.com/chaitra-mk/aps-portfolio/assets/105005252/45a70709-77d7-49a9-9dc7-7843f0803f6f)
+<img src="https://github.com/chaitra-mk/aps-portfolio/assets/105005252/45a70709-77d7-49a9-9dc7-7843f0803f6f" alt="Image" width="550" height="450">
 Fenwick Trees can store and efficiently query the number of bookings over different periods.Represent each day or time slot as an entry in the Fenwick Tree. Each index can hold the cumulative number of bookings.When a booking is made, update the tree to increment the booking count for the specific day.The total number of bookings over any range of days can be queried. This can help identify peak booking periods and trends.
 
 Time Complexity : nlogn
