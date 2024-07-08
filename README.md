@@ -125,6 +125,8 @@ Time Complexity of queue data structure : Insertion and Deletion takes O(1) time
 
 Concurrency control uses techniques including locking, optimistic and pessimistic concurrency control, and database transactions to preserve data integrity during concurrent bookings. In order to maintain system stability and user satisfaction, this avoids disputes and guarantees that every booking transaction is performed precisely and thoroughly, either completing completely or not at all.
 
+[Simple Implemetation od Queues](https://github.com/amitbansal7/Data-Structures-and-Algorithms/blob/master/5.Queue/PriorityQueue.c)
+
 ## Sort buses based on preferences
 Challenge : Handling many sorting criteria like fare, travel time, and relevance efficiently to meet varying user preferences and requirements.
 Market Benefits : Improves user experience.
