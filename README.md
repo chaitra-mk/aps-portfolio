@@ -65,7 +65,7 @@ Once the goal node is reached, reconstruct the optimal path by tracing back from
 [Code for Dijkstra's Algorithm](https://github.com/Nerdylicious/DijkstraShortestPath/blob/master/DijkstraShortestPath.cpp)
 Time Complexity of A* Algorithm depends on heuristics. For priority queue O(|E + V|log(|V|) where E: Number of Edges and V: Number of Vertices
 
-## Anlysing Booking Trends
+## Analysing Booking Trends
 
 Challenges : Analyzing booking trends requires handling and processing large volumes of data efficiently. Also, it requires managing data consistency and integrity across different periods and time slots.
 Market Benefits : Identifying peak booking periods helps optimize bus schedules and resource allocation. Analysis also helps to boost sales during low-demand periods.
