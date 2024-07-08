@@ -89,11 +89,11 @@ Time Complexity : nlogn
 
 
 ## Seat Availibity Management
-RedBus application requires efficient managing and checking the seat availability across many buses. Fenwick Trees can be effectively utilized for this functionality. 
-Integrating Fenwick Trees into RedBus's ticket booking system for seat availability management improves efficiency and customer satisfaction. It supports real-time updates and queries, ensuring that users can quickly find and book available seats across multiple buses and routes.
+RedBus application requires efficient managing and checking the seat availability across many buses. Segment Trees can be effectively utilized for this functionality. 
+Integrating Segment Tree into RedBus's ticket booking system for seat availability management improves efficiency and customer satisfaction. It supports real-time updates and queries, ensuring that users can quickly find and book available seats across multiple buses and routes.
 As same company bus can be used for many routes on different dates, combination of bus-route-date can represented as an entry in Fenwick Tree.
 
-Initialise the Fenwick Tree with total number of seates available. When a booking is made for a bus on particular route and date the corresponding seat count can be descreased and if booking is cancelled the seat count can be increased representing the available seats.  
+Initialise the Tree with total number of seates available. When a booking is made for a bus on particular route and date the corresponding seat count can be descreased and if booking is cancelled the seat count can be increased representing the available seats.  
 This quickly retrives the total number of available seats for a specific route over range of dates. This helps the application to dynamically adjust seat availability.
 
 
