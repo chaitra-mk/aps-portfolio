@@ -1,4 +1,4 @@
-# APS Case Study on RedBus Application
+![image](https://github.com/chaitra-mk/aps-portfolio/assets/105005252/9d0ec861-7dd6-4e3b-b68b-882908d52d86)# APS Case Study on RedBus Application
 
 # RedBus Portfolio
 <dl>
@@ -187,6 +187,18 @@ Here is the [code](https://github.com/lowkimberly/knapsack/blob/main/knapsack1.c
 A hash table may be used to store a customer's session data for easy access and updates once they log in. This is very helpful for saving preferences, session data, and other temporary information. Using unique identifiers like user IDs or email addresses, hash tables can be utilised to quickly retrieve customer information.
 
 ### B and B+ Trees
+<div style="display:flex; justify-content:center;">
+  <div style="flex:1; text-align:center;">
+    <img src="https://github.com/chaitra-mk/aps-portfolio/assets/105005252/a162b4d7-02aa-4b79-bcda-4e48d5e95868" alt="B Tree" width="400" height="450">
+    <p>B Tree</p>
+  </div>
+  <div style="flex:1; text-align:center;">
+    <img src="https://github.com/chaitra-mk/aps-portfolio/assets/105005252/04d3e6c7-7d71-4fe5-88f7-d9b051df07bc" alt="B+ Tree" width="400" height="450">
+    <p>B+ Tree</p>
+  </div>
+</div>
+
+
 B trees can be used to store and arrange customer data, including booking histories, preferences, and transaction records, after a user logs in. B-trees are effective for storing and retrieving data based on identifiers like customer IDs or booking numbers because each node can have numerous keys and pointers. This structure is appropriate for real-time applications where data access speed is critical since it guarantees that all searches, insertions, and deletions have logarithmic time complexity.
 
 Where range queries are common, such as retrieving bookings within a given period range or ranking customers based on transaction amounts, B+ trees can be used to manage customer related data. RedBus can utilize B+ trees to manage and retrieve booking information, with operations such as searching for bookings by date, customer ID, route etc.
