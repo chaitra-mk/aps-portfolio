@@ -191,4 +191,8 @@ B trees can be used to store and arrange customer data, including booking histor
 
 Where range queries are common, such as retrieving bookings within a given period range or ranking customers based on transaction amounts, B+ trees can be used to manage customer related data. RedBus can utilize B+ trees to manage and retrieve booking information, with operations such as searching for bookings by date, customer ID, route etc.
 
+[Code for B Tree](https://github.com/chaitra-mk/aps-portfolio/blob/main/B_Tree.cpp)
+
+[Code for B+ Tree](https://github.com/sayef/bplus-tree/blob/master/BPlusTree.cpp)
+
 
