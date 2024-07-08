@@ -169,8 +169,10 @@ RedBus fleet management can maximise resource utilisation, cut costs, and improv
 
 
 Challenge :  The challenge lies in determining the optimal mix of bus types (e.g., small, medium, large) to assign to different routes and schedules. 
+Market Benefits : This optimization aims to maximize profitability by minimizing operational costs while meeting passenger demand and service quality standards.
 
-This optimization aims to maximize profitability by minimizing operational costs while meeting passenger demand and service quality standards.
+Here is the [code](https://github.com/lowkimberly/knapsack/blob/main/knapsack1.cpp)
+
 
 ## Managing Customer Data
 ### Hash Tables
