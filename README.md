@@ -31,7 +31,7 @@ RedBus is a online bus ticket booking platform, connecting various cities across
 - Provide sample code for the algorithms identified for different cases.
 
 
-#  Business Cases
+# Business Cases
 ## Search Boarding Location and Destination Location
 
 Challenges : Redbus is a very large platform. In most of India, this app is utilised for ticket reservations. As a result, a large number locations need to be effectively saved and retrieved.
