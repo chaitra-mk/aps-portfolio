@@ -68,6 +68,7 @@ In A* algorithm The cost function g(n) represent the distance to reach a specifi
 The heuristic function h(n) estimates the distance from any given bus stop to the destination. This estimation guides the algorithm towards the most promising paths, reducing unnecessary exploration and improving efficiency.A* combines g(n) and h(n) to determine the priority of nodes in the open list. The total cost function f(n)=g(n)+h(n) ensures that nodes with lower estimated costs to reach the goal are explored first, leading to faster convergence towards the optimal route.A priority queue is used in the A* algorithm to manage nodes based on their total cost function, ensuring that nodes with lower total costs are explored first, which helps in efficiently finding the shortest path from a start node to a goal node in applications such as route optimization for RedBus.
 Once the goal node is reached, reconstruct the optimal path by tracing back from the goal node to the start node using the recorded parent pointers or paths.
 
+[Code for Dijkstra's Algorithm](https://github.com/Nerdylicious/DijkstraShortestPath/blob/master/DijkstraShortestPath.cpp)
 Time Complexity of A* Algorithm depends on heuristics. For priority queue O(|E + V|log(|V|) where E: Number of Edges and V: Number of Vertices
 
 ## Anlysing Booking Trends
@@ -156,17 +157,12 @@ Data loading: The data is collected from multiple systems and keep them ready fo
 Data processing: In these process we run algorithms on historical data and produce output to be used in real time tracking and reporting. Some of the output of these algorithms are
 - Boarding point sequence
 - Graph for the bus paths
-- ETA model
-- GTFS (Google transit feed specification)
 
 There are multiple reports for tracking accuracy of the ETA, coverage of Boarding point detection and customer experience during the journey.
 Real time tracking: In this system we consume data from the above two systems and merge it with the real time GPS feed coming from the GPS vendor integrations. The result is a set of value added services like;
 - Live bus location tracking on mobile web and app
 - ETA for boarding and dropping points
 - Contextual notifications to passengers through SMS, push notification and automated calls
-- Booking window extension for delayed services
-- Feed for real time settlement of delay insurances
-- 
 [reference](https://medium.com/redbus-in/redbus-bus-tracking-system-6134aa6b9160)
 
 ## Bus Fleet Management
@@ -190,7 +186,6 @@ A hash table may be used to store a customer's session data for easy access and 
 | B Tree                                    | B+ Tree                                   |
 |-------------------------------------------|-------------------------------------------|
 | ![B Tree](https://github.com/chaitra-mk/aps-portfolio/assets/105005252/a162b4d7-02aa-4b79-bcda-4e48d5e95868) | ![B+ Tree](https://github.com/chaitra-mk/aps-portfolio/assets/105005252/04d3e6c7-7d71-4fe5-88f7-d9b051df07bc) |
-| B Tree Label                              | B+ Tree Label                             |
 
 
 B trees can be used to store and arrange customer data, including booking histories, preferences, and transaction records, after a user logs in. B-trees are effective for storing and retrieving data based on identifiers like customer IDs or booking numbers because each node can have numerous keys and pointers. This structure is appropriate for real-time applications where data access speed is critical since it guarantees that all searches, insertions, and deletions have logarithmic time complexity.
