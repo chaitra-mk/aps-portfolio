@@ -161,7 +161,7 @@ Challenge : Monitering the bus in real time may experience delays, connectivity 
 Market Benefits : Improves passenger experience and safety by providing real-time bus locations and updates. 
 Everyday about 150 K customers travel with a ticket bought on redBus in about 40 K bus trips. We collect real time GPS data from the buses and provide value added services to our customers along with basic tracking of the bus.
 
-For keeping track of the buses data structure called a quadtree can be used. Imagine a map divided into squares, starting with the entire area RedBus covers. The quadtree keeps track of these squares. If a square has too many buses (say, more than 100), it gets divided into four smaller squares. This keeps happening until each square has a manageable number of buses. This way, RedBus can quickly find buses in any area.
+For keeping track of the buses data structure called a quadtree can be used [[3]](https://medium.com/@joudwawad/school-bus-tracker-system-architecture-6dd3307e3860) . Imagine a map divided into squares, starting with the entire area RedBus covers. The quadtree keeps track of these squares. If a square has too many buses (say, more than 100), it gets divided into four smaller squares. This keeps happening until each square has a manageable number of buses. This way, RedBus can quickly find buses in any area.
 ![Screenshot 2024-07-07 195853](https://github.com/chaitra-mk/aps-portfolio/assets/105005252/ac1566f3-2cf6-4605-b7cf-ec8e1b10ced1)
 
 
@@ -174,6 +174,8 @@ The quadtree structure allows for efficient updates and queries, handling freque
 [reference](https://medium.com/@joudwawad/school-bus-tracker-system-architecture-6dd3307e3860)
 
 #### The real RedBus Application uses following process:
+The below is the process for live tracking [[1]](https://medium.com/redbus-in/user-generated-reviews-classification-and-tagging-from-redbus-e62b5a5e6951)
+
 Data loading: The data is collected from multiple systems and keep them ready for consumption in real time during the trip. These data points include Vehicle information, Trip schedules, Vehicle assignment schedules and Passenger information. We also have manual process for geo-coding boarding points.
 Data processing: In these process we run algorithms on historical data and produce output to be used in real time tracking and reporting. Some of the output of these algorithms are
 - Boarding point sequence
@@ -184,7 +186,7 @@ Real time tracking: In this system we consume data from the above two systems an
 - Live bus location tracking on mobile web and app
 - ETA for boarding and dropping points
 - Contextual notifications to passengers through SMS, push notification and automated calls
-[reference](https://medium.com/redbus-in/redbus-bus-tracking-system-6134aa6b9160)
+
 
 ## Bus Fleet Management
 Challenge :  The challenge lies in determining the optimal mix of bus types (e.g., small, medium, large) to assign to different routes and schedules. 
@@ -235,9 +237,16 @@ Implementing advanced data structures and algorithms within the RedBus platform 
 [1] RedBus. (n.d.). User-generated reviews classification and tagging from RedBus. Medium. [Online]. Available: [https://medium.com/redbus-in/user-generated-reviews-classification-and-tagging-from-redbus-e62b5a5e6951
 ](https://medium.com/redbus-in/user-generated-reviews-classification-and-tagging-from-redbus-e62b5a5e6951
 )
+
 [2] RedBus. (n.d.). RedBus bus tracking system. Medium. [Online]. Available: [https://medium.com/redbus-in/redbus-bus-tracking-system-6134aa6b9160](https://medium.com/redbus-in/redbus-bus-tracking-system-6134aa6b9160)
 
 [3] Joud Wawad. (n.d.). School bus tracker system architecture. Medium. [Online]. Available: [https://medium.com/@joudwawad/school-bus-tracker-system-architecture-6dd3307e3860](https://medium.com/@joudwawad/school-bus-tracker-system-architecture-6dd3307e3860)
+
+[4] GeeksforGeeks. (n.d.). Trie | Insert and Search. Retrieved July 8, 2024, from [https://www.geeksforgeeks.org/trie-insert-and-search/](https://www.geeksforgeeks.org/trie-insert-and-search/)
+
+[5] RedBus Engineering. (2020). RedBus Tracking: What’s Under the Hood? Medium. Retrieved July 8, 2024, from [https://medium.com/redbus-in/redbus-tracking-whats-under-the-hood-9ca99aa6b8ee](https://medium.com/redbus-in/redbus-tracking-whats-under-the-hood-9ca99aa6b8ee)
+
+[6] GeeksforGeeks. (n.d.). Merge Sort Algorithm. Retrieved July 8, 2024, from [https://www.geeksforgeeks.org/merge-sort/](https://www.geeksforgeeks.org/merge-sort/)
 
 
 
