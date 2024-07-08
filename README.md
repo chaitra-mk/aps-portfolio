@@ -23,8 +23,7 @@
 
 RedBus is a online bus ticket booking platform, connecting various cities across the globe with just a click of a button. With its mobile app downloaded by over 7.5 million loyal customers, redBus has become the largest community of bus travelers in the world. Initially launched in India, Redbus has since expanded its services to Singapore, Malaysia, Indonesia, Colombia, and Peru as of 2014. Boasting the most extensive network of bus operators, routes, and registered users, Redbus plays an important role in connecting cities, enhancing co-living, and positively influencing local economies and public services. Its user-friendly, robust, and scalable reservation and management system is widely used by both passengers and bus operators. This application has played a significant role in public transportation. It provides functionalities such as a route planner, online reservation system accessible to multiple bus companies, and a taxi-sharing service. There are hundreds of API Providers integrated with redBus.
 
-## Objectives
-## Objectives
+# Objectives
 
 - Apply data structures and algorithms to the real-world operations of RedBus.
 - Identify business cases and propose various algorithms to implement these cases.
@@ -69,7 +68,7 @@ Once the goal node is reached, reconstruct the optimal path by tracing back from
 
 [Code for Dijkstra's Algorithm](https://github.com/Nerdylicious/DijkstraShortestPath/blob/master/DijkstraShortestPath.cpp)
 
-Time Complexity of A* Algorithm depends on heuristics. For priority queue O((|E + V|)log(|V|) where E: Number of Edges and V: Number of Vertices
+Time Complexity of A* Algorithm depends on heuristics. For priority queue O((E + V)log(V) where E: Number of Edges and V: Number of Vertices
 
 ## Analysing Booking Trends
 
@@ -228,14 +227,16 @@ Where range queries are common, such as retrieving bookings within a given perio
 
 ## Conclusion
 
-## Conclusion
-
 Implementing advanced data structures and algorithms within the RedBus platform enhances its efficiency, scalability, and user experience. Utilizing Trie data structures for efficient location search, Dijkstra's and A* algorithms for route optimization, Fenwick Trees for booking trend analysis, and Segment Trees for seat availability management ensures robust and responsive service. Dynamic pricing models, backed by real-time data, maximize revenue while maintaining customer satisfaction. Additionally, graph theory and machine learning for fraud detection, along with quadtree structures for live bus monitoring, significantly improve operational security and passenger experience. By integrating these technologies, RedBus not only optimizes its operations but also sets a high standard in the online bus ticket booking industry, ultimately leading to increased market competitiveness and customer trust.
 
 
 ## References 
-[1] RedBus. (n.d.). User-generated reviews classification and tagging from RedBus. Medium. [Online]. Available: https://medium.com/redbus-in/user-generated-reviews-classification-and-tagging-from-redbus-e62b5a5e6951
+[1] RedBus. (n.d.). User-generated reviews classification and tagging from RedBus. Medium. [Online]. Available: [https://medium.com/redbus-in/user-generated-reviews-classification-and-tagging-from-redbus-e62b5a5e6951
+](https://medium.com/redbus-in/user-generated-reviews-classification-and-tagging-from-redbus-e62b5a5e6951
+)
+[2] RedBus. (n.d.). RedBus bus tracking system. Medium. [Online]. Available: [https://medium.com/redbus-in/redbus-bus-tracking-system-6134aa6b9160](https://medium.com/redbus-in/redbus-bus-tracking-system-6134aa6b9160)
 
-[2] RedBus. (n.d.). RedBus bus tracking system. Medium. [Online]. Available: https://medium.com/redbus-in/redbus-bus-tracking-system-6134aa6b9160
+[3] Joud Wawad. (n.d.). School bus tracker system architecture. Medium. [Online]. Available: [https://medium.com/@joudwawad/school-bus-tracker-system-architecture-6dd3307e3860](https://medium.com/@joudwawad/school-bus-tracker-system-architecture-6dd3307e3860)
 
-[3] Joud Wawad. (n.d.). School bus tracker system architecture. Medium. [Online]. Available: https://medium.com/@joudwawad/school-bus-tracker-system-architecture-6dd3307e3860
+
+
